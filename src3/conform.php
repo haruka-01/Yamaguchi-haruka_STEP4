@@ -1,4 +1,5 @@
 <?php
+
 $name     = $_POST['name']     ?? '';
 $age      = $_POST['age']      ?? '';
 $phone    = $_POST['phone']    ?? '';
@@ -70,4 +71,4 @@ if (!empty($errors)) {
 <p>性別：<?php echo htmlspecialchars($gender, ENT_QUOTES, 'UTF-8'); ?></p>
 
 </body>
-</html>
+</html
