@@ -29,8 +29,8 @@
   <label for="question">質問:</label>
   <textarea id="question" name="question"></textarea>
 
-  <label for="gender">性別:</label>
-  <select id="gender" name="gender">
+  <label for="sex">性別:</label>
+  <select id="sex" name="sex">
     <option value="男性">男性</option>
     <option value="女性">女性</option>
   </select>
