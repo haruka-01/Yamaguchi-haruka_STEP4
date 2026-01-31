@@ -43,12 +43,14 @@ if ($address !== '' && !preg_match('/^[ぁ-んァ-ン一-龥a-zA-Z]+$/u', $addre
 }
 
 if (!empty($errors)) {
-  echo '<h2>入力エラーがあります</h2>';
+  $content = '<h2>入力エラーがあります</h2>';
   foreach ($errors as $error) {
-    echo '<p style="color:red;">' . $error . '</p>';
+    $content .= '<p style="color:red;">' . $error . '</p>';
   }
-  echo '<a href="form.php">入力画面に戻る</a>';
-  exit;
+  $content .= '<a href="form.php">入力画面に戻る</a>';
+} else {
+    $content = '<h1>入力内容確認</h1>';
+    $content .= '<p>名前：' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '</p>';
 }
 ?>
 
@@ -71,4 +73,4 @@ if (!empty($errors)) {
 <p>性別：<?php echo htmlspecialchars($gender, ENT_QUOTES, 'UTF-8'); ?></p>
 
 </body>
-</html
+</html>
