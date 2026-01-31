@@ -6,7 +6,7 @@ $phone    = $_POST['phone']    ?? '';
 $email    = $_POST['email']    ?? '';
 $address  = $_POST['address']  ?? '';
 $question = $_POST['question'] ?? '';
-$gender   = $_POST['sex']      ?? '';
+$sex      = $_POST['sex']      ?? '';
 
 $errors = [];
 
