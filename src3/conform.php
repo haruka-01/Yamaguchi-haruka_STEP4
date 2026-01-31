@@ -70,7 +70,7 @@ if (!empty($errors)) {
 <p>メールアドレス：<?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?></p>
 <p>住所：<?php echo htmlspecialchars($address, ENT_QUOTES, 'UTF-8'); ?></p>
 <p>質問：<?php echo htmlspecialchars($question, ENT_QUOTES, 'UTF-8'); ?></p>
-<p>性別：<?php echo htmlspecialchars($gender, ENT_QUOTES, 'UTF-8'); ?></p>
+<p>性別：<?php echo htmlspecialchars($sex, ENT_QUOTES, 'UTF-8'); ?></p>
 
 </body>
 </html>
